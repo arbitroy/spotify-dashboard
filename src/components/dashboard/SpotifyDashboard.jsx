@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { Music2, Home, BarChart3, Settings, Bell, LogOut, User, Grid, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Mock Spotify data
 const spotifyData = {
@@ -28,25 +26,6 @@ const spotifyData = {
 };
 
 const SpotifyDashboard = () => {
-    const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
-    const [showProfileMenu, setShowProfileMenu] = useState(false);
-
-    const sidebarVariants = {
-        expanded: { width: '16rem' },
-        collapsed: { width: '4rem' }
-    };
-
-    const textVariants = {
-        expanded: { opacity: 1, display: 'block' },
-        collapsed: { opacity: 0, display: 'none' }
-    };
-
-    const navItems = [
-        { icon: <Home />, text: 'Home', path: '/' },
-        { icon: <BarChart3 />, text: 'Statistics', path: '/stats' },
-        { icon: <Settings />, text: 'Settings', path: '/settings' }
-    ];
-
     return (
         <div className="flex h-screen bg-gray-900 text-gray-100">
 

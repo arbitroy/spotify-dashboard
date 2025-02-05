@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Clock, Play, Headphones, Calendar, TrendingUp, BarChart3 } from 'lucide-react';
+import { Clock, Play, Headphones,TrendingUp, BarChart3 } from 'lucide-react';
 
 // Mock data remains the same
 const mockData = {
