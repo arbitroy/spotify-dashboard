@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
+import PropTypes from 'prop-types';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Music2, Home, PieChart, Settings, Bell, LogOut, User, Grid, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLocation, Link } from 'react-router-dom';
@@ -137,6 +138,9 @@ const Layout = ({ children }) => {
             </div>
         </div>
     );
+};
+Layout.propTypes = {
+    children: PropTypes.node.isRequired,
 };
 
 export default Layout;
